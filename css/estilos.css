@@ -154,6 +154,19 @@ body{
 }
 
 
+.cta:hover{
+
+    background: #fff;
+    color:#f72585;
+}
+
+.cta:active{
+
+    background: #3a0ca3;
+    color: #fff;
+}
+
+
 /* about */
 
 .about{
@@ -604,7 +617,19 @@ overflow:hidden;
         cursor: pointer;
     }
 
+    .footer__submit:hover{
 
+        background: #fff;
+        color:#f72585;
+    }
+    
+    
+    .footer__submit:active{
+    
+        background: #3a0ca3;
+        color: #fff;
+    }
+    
     .footer__copy{
 
         --padding-container: 30px 0; 
@@ -636,262 +661,261 @@ overflow:hidden;
 
 
 
-    
-    /* Media queries */
+/* Media queries */
 
-    @media (max-width:800px) {
+@media (max-width:800px) {
 
-        .nav__menu{
+    .nav__menu{
 
-            display: block;
-        }
+        display: block;
+    }
 
-        .nav__link--menu{
+    .nav__link--menu{
 
-            position: fixed;
-            background-color: #000;
-             top: 0;
-             left: 0;
-             height: 100%;
-             width: 100%;
-             display: flex;
-             flex-direction: column;
-             justify-content: space-evenly;
-             align-items: center;
-             z-index: 100;
-             opacity: 0;
-             pointer-events: none;
-             transition: .7s opacity;
-        }
+        position: fixed;
+        background-color: #000;
+         top: 0;
+         left: 0;
+         height: 100%;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+         align-items: center;
+         z-index: 100;
+         opacity: 0;
+         pointer-events: none;
+         transition: .7s opacity;
+    }
 
 
-        .nav__link--show{
-            --show: biock;
-            opacity: 1;
-            pointer-events: unset;
-        }
-        
+    .nav__link--show{
+        --show: biock;
+        opacity: 1;
+        pointer-events: unset;
+    }
     
 
 
-        .nav__close{
 
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            width: 30px;
-            cursor: pointer;
-             
-        }
+    .nav__close{
 
-
-        .hero__title{
-
-            font-size: 2.5rem;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+         
+    }
 
 
-        }
+    .hero__title{
 
+        font-size: 2.5rem;
 
-        .about__main{
-
-            gap: 2em;
-        }
-
-
-        .about__icons:last-of-type{
-
-            grid-column: 1/-1;
-             
-        }
-
-        .knowledge__container{
-
-            grid-template-columns: 1fr;
-            grid-template-rows: max-content 1fr;
-            gap: 3em;
-            text-align: center;
-        }
-        
-        
-        .knowledge__picture{
-
-            grid-row: 1/2;
-            justify-self: center;
-            width: 300px;
-
-        }
-
-
-
-
-        .testimony__container{
-
-            grid-template-columns: 30px 1fr 30px;
-
-        }
-
-
-        .testimony__body{
-
-            grid-template-columns: 1fr;
-            grid-template-rows: max-content max-content;
-            gap: 3em;
-            justify-items: center;
-        }
-
-/* 
-        .testimony_picture{
-
-
-
-        } */
-
-
-        .testimony__img{
-
-            width: 200px;
-            height: 200px;
-        }
-
-
-        .footer__container{
-
-            flex-wrap: wrap;
-
-        }
-
-        .nav--footer{
-
-            width: 100%;
-            justify-items: center;
-        }
-        
-        
-        .nav__link--footer{
-            
-            width: 100%;
-            justify-content: space-evenly;
-            margin: 0;
-        }
-
-        .footer__form{
-
-            width: 100%;
-            justify-content: space-evenly;
-        }
-
-
-        .footer__input{
-
-            flex: 1;
-
-        }
-    }       
-    
-    
-    @media (max-width:600px){
-
-        .hero__title{
-            font-size: 2rem;
-
-        }
-
-        .hero__paragraph{
-            font-size: 1rem;
-        }
-
-        .subtitle{
-
-            font-size: 1.8rem;
-        } 
-
-
-       .knowledge__picture{
-
-            width: 200px;
-        }
-
-
-        .price{
-
-            margin: 40px auto ;
-            padding: 0;
-        }
-
-
-        
-        
-
-        .testimony__container{
-
-            grid-template-rows: 280px 1fr 28px;
-            gap: .9em;
-     
 
     }
+
+
+    .about__main{
+
+        gap: 2em;
+    }
+
+
+    .about__icons:last-of-type{
+
+        grid-column: 1/-1;
+         
+    }
+
+    .knowledge__container{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 3em;
+        text-align: center;
+    }
+    
+    
+    .knowledge__picture{
+
+        grid-row: 1/2;
+        justify-self: center;
+        width: 300px;
+
+    }
+
+
+
+
+    .testimony__container{
+
+        grid-template-columns: 30px 1fr 30px;
+
+    }
+
+
+    .testimony__body{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items: center;
+    }
+
+/* 
+    .testimony_picture{
+
+
+
+    } */
+
 
     .testimony__img{
 
-        width: 100px;
-        height: 100px;
-        margin: 0;
-        padding: 0;
+        width: 200px;
+        height: 200px;
     }
 
 
-    .testimony__arrow{
+    .footer__container{
 
-        width: 100%;
-    }
+        flex-wrap: wrap;
 
-    .testimony__course{
-
-        margin-top: 15px;
-    }
-
-
-    .questions__title{
-
-        font-size: 1rem;
-        text-align: left;
-        
     }
 
     .nav--footer{
 
+        width: 100%;
+        justify-items: center;
+    }
+    
+    
+    .nav__link--footer{
+        
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .footer__form{
+
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+
+    .footer__input{
+
+        flex: 1;
+
+    }
+}       
+
+
+@media (max-width:600px){
+
+    .hero__title{
+        font-size: 2rem;
+
+    }
+
+    .hero__paragraph{
+        font-size: 1rem;
+    }
+
+    .subtitle{
+
+        font-size: 1.8rem;
+    } 
+
+
+   .knowledge__picture{
+
+        width: 200px;
+    }
+
+
+    .price{
+
+        margin: 40px auto ;
+        padding: 0;
+    }
+
+
+    
+    
+
+    .testimony__container{
+
+        grid-template-rows: 280px 1fr 28px;
+        gap: .9em;
+ 
+
+}
+
+.testimony__img{
+
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.testimony__arrow{
+
+    width: 100%;
+}
+
+.testimony__course{
+
+    margin-top: 15px;
+}
+
+
+.questions__title{
+
+    font-size: 1rem;
+    text-align: left;
+    
+}
+
+.nav--footer{
+
 padding: 0;
 margin-bottom: 40px;
 
-    }
+}
 
-    .nav__link--footer{
+.nav__link--footer{
 
-        justify-content: space-between;
-    }
+    justify-content: space-between;
+}
 
-    .footer__title{
+.footer__title{
 
-        justify-self: start;
-    }
+    justify-self: start;
+}
 
-    .footer__inputs{
+.footer__inputs{
 
-        flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
+}
 
-    .footer__input{
-        flex-basis: 100%;
-        margin: 0;
-        margin-bottom: 16px;
-    }
+.footer__input{
+    flex-basis: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+}
 
 
 
-    .footer__submit{
+.footer__submit{
 
-            margin-right: auto;
+        margin-right: auto;
 
-    }
+}
 
-    }
+}
